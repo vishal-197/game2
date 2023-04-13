@@ -200,19 +200,51 @@
         //     }
         //   }
         // })
-
+       
         let flipCard = document.querySelectorAll(".flip-card-inner")
         flipCard.forEach( flip =>{
           flip.onclick = () =>{
-            let cssvalue = window.getComputedStyle(flipCard[0])
+            let cssvalue = window.getComputedStyle(flip)
             console.log("Vishal")
             if(cssvalue.getPropertyValue("transform")=== "none"){
               flip.style.transform = "rotateY(180deg)";
               photo++;
-            }
+              // if(photo >1){
+                if(photoCheck()){
+
+                }
+                else{
+                  closePhoto()
+                }
+              }
+              }
           
           }
-        })
+            //}
+        )
+
+        function photoCheck (){
+          // console.log("ravi")
+          if(photo > 1){
+            if(photo[0] === photo[1]){
+              
+              
+              
+              // if(imgName == imgName1){
+                
+              //   console.log("match")
+              //   style.display ="none";
+              // }
+            }
+            // if(photo[0]!==photo[1]){
+            //   flip.style.transform = "rotateY(180deg)";
+
+              
+            // }
+          
+          }
+        }
+
       
 
       //   let a = document.querySelectorAll("a");
@@ -240,20 +272,20 @@
        
       // });
 
-  //     function checkvalu(){
-  //       let getValue =[]
+      // function checkvalu(){
+      //   let getValue =[]
      
-  //       fo
-  //       let valueA = document.querySelector("a").lastChild.getAttribute("src")
-  //       console.log(valueA) 
-  //       // getValue.push(valueA)
-  //       valueB.push(valueA)
+      //   fo
+      //   let valueA = document.querySelector("a").lastChild.getAttribute("src")
+      //   console.log(valueA) 
+      //   // getValue.push(valueA)
+      //   valueB.push(valueA)
         
-  //     console.log(getValue)
-  //     console.log(valueB)
-  //     console.log(valueC)
+      // console.log(getValue)
+      // console.log(valueB)
+      // console.log(valueC)
 
-  //       }
+      //   }
         
       
       
